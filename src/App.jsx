@@ -1,13 +1,16 @@
-import './App.css';
-import {Navbar, Post} from './components'
+import { Paper } from "@material-ui/core";
+import "./App.css";
+import { Navbar, Post } from "./components";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Post />
-      <Post />
-      <Post />
+      <Paper style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+        <Post />
+        <Post />
+        <Post />
+      </Paper>
     </div>
   );
 }
