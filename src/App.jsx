@@ -1,17 +1,16 @@
-import { Paper } from "@material-ui/core";
+import { Provider } from "react-redux";
 import "./App.css";
-import { Navbar, Post } from "./components";
-
+import HomePage from "./pages/home/home-page";
+import LoginPage from "./pages/login/login-page";
+import store from './redux/store'
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Paper style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-        <Post />
-        <Post />
-        <Post />
-      </Paper>
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        {/* <HomePage /> */}
+        <LoginPage />
+      </div>
+    </Provider>
   );
 }
 

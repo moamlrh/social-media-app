@@ -163,7 +163,7 @@ export  function Navbar() {
 
   return (
     <div className={classes.grow}>
-      <AppBar position="static">
+      <AppBar position="static" >
         <Toolbar>
           <IconButton
             edge="start"
@@ -174,7 +174,7 @@ export  function Navbar() {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            Material-UI
+            Social media app
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>

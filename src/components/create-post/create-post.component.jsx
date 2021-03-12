@@ -12,6 +12,9 @@ export function CreatePost() {
     let img = e.target.files[0];
     setUrl((window.URL || window.webkitURL).createObjectURL(img));
   };
+  const handleAddNewPostClick = () => {
+      alert('add new post')
+  }
   return (
     <div
       className="create-new-post"
@@ -27,6 +30,7 @@ export function CreatePost() {
       <IconButton
         color="primary"
         style={{ position: "absolute", bottom: "10px", right: "5px" }}
+        onClick={handleAddNewPostClick}
       >
         <SendOutlined />
       </IconButton>
